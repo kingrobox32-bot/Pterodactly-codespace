@@ -1,0 +1,15 @@
+{
+  "name": "Pterodactyl Panel - Codespace",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "features": {
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {}
+  },
+  "postCreateCommand": "bash .devcontainer/setup.sh",
+  "forwardPorts": [80],
+  "portsAttributes": {
+    "80": {
+      "label": "Pterodactyl Panel",
+      "onAutoForward": "openBrowser"
+    }
+  }
+}
